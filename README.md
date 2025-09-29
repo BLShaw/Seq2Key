@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 Predictive Keyboard Model
+# Seq2Key: A Predictive Keyboard Model
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue?logo=python)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch)](https://pytorch.org/)
@@ -10,7 +10,7 @@
 
 </div>
 
----
+
 
 ## 📋 Table of Contents
 - [✨ Features](#-features)
@@ -21,7 +21,7 @@
 - [📁 File Structure](#-file-structure)
 - [📄 License](#-license)
 
----
+
 
 ## ✨ Features
 
@@ -33,7 +33,7 @@
 - 📊 **Confidence scores** for each prediction
 - 📈 **Configurable prediction count** to control output
 
----
+
 
 ## 🛠️ Requirements
 
@@ -48,14 +48,14 @@
 - 2GB+ RAM
 - 50MB+ disk space
 
----
+
 
 ## 🚀 Setup
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd predictive-keyboard-model
+git clone https://github.com/BLShaw/Seq2Key
+cd Seq2Key
 ```
 
 ### 2. Install Dependencies
@@ -68,14 +68,14 @@ You need the model file `predictive_keyboard_model.pth` in the project directory
 This file is typically too large for Git repositories. If it's not included, you'll need to train your own model 
 using the provided notebook or download a pre-trained model file.
    
-To train your own model, run the `predictive_keyboard_model.ipynb` notebook with your training data.
+To train your own model, run the `predictive_keyboard_model.ipynb` notebook with your training data (TXT).
 
 ### 4. Run the Application
 ```bash
 streamlit run app.py
 ```
 
----
+
 
 ## 💻 Usage
 
@@ -89,7 +89,7 @@ streamlit run app.py
 - Predictions: ["brown", "way", "and", "time", "man"]
 - Confidence Scores: [0.45, 0.23, 0.15, 0.12, 0.05]
 
----
+
 
 ## 📚 Model Architecture
 
@@ -110,7 +110,7 @@ The predictive model utilizes a sophisticated LSTM-based architecture:
 | Dropout Rate | 0.3 |
 | Vocabulary Size | 4500+ |
 
----
+
 
 ## 📁 File Structure
 
@@ -133,13 +133,13 @@ predictive-keyboard-model/
 - **`dataset.txt`**: Text corpus for training the model
 - **`requirements.txt`**: List of required Python packages
 
----
+
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+
 
 <div align="center">
 
